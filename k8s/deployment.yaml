@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+      - name: flask-app-container
+        image: flask-app:v2              # 🔥 CHANGED HERE
+        imagePullPolicy: Never    # 🔥 CHANGED HERE
+        ports:
+        - containerPort: 5000
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        - name: IMAGE_NAME
+          value: "flask-app:v2"          # 🔥 CHANGED HERE
