@@ -1,12 +1,20 @@
-<<<<<<< HEAD
-\# CI/CD to Kubernetes (Local)
+# CI/CD to Kubernetes (Local)
 
+[![CI](https://github.com/Tanuja-chennurkar/ci-cd/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/Tanuja-chennurkar/ci-cd/actions/workflows/blank.yml)
 
+## Project Overview
+End-to-End CI/CD pipeline using GitHub Actions, Docker, Minikube, and Kubernetes.
 
-\[!\[CI](https://github.com/Tanuja-chennurkar/ci-cd/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/Tanuja-chennurkar/ci-cd/actions/workflows/blank.yml)
+## Stack
+- GitHub Actions
+- Docker
+- Minikube
+- Kubernetes
+- Flask
 
+## Status
+✅ Pipeline automated  
+✅ Kubernetes deployed  
+✅ Health checks enabled  
 
-
-=======
-\[!\[CI](https://github.com/Tanuja-chennurkar/ci-cd/actions/workflows/blank.yml/badge.svg)](https://github.com/Tanuja-chennurkar/ci-cd/actions/workflows/blank.yml
->>>>>>> a2d825e7b442c47cc723eba0784c5dd1d6fa729d
+Developed as a DevOps CI/CD Demonstration Project
